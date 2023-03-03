@@ -42,7 +42,7 @@
 * `merged_data['tokenized'] = merged_data['tokenized'].apply(lambda x: [item for item in x if item not in stopwords])` 을 통해 불용어와 필요없는 토큰을 제거함
 * `tokenizer.fit_on_texts(X_train)`을 통해 데이터 셋에 정수 인코딩을 하여 텍스트를 숫자로 처리함
 * `len(tokenizer.word_index)`을 출력하여 등장횟수가 1회인 단어들은 학습에서 배제함
-*  ## OOV로 변환한다는데 이게 뭔지 찾아보기
+*  ## OOV로 변환
 *  `max(len(review) for review in X_train`를 통해 텍스트의 최대 길이를 파악한 후 다른 텍스트들과 길이를 맞추기 위해 padding 작업을 진행함
 
 ### Wav
